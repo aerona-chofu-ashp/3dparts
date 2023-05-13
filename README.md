@@ -7,6 +7,9 @@ central heating using a Grant Aerona3 air source heat pump.
 
 ![Rendering](thermistor-boss/thermistor_boss_rj11.png)
 
+![Assembled](images/boss-assembled.jpg)
+![Installed](images/boss-installed.jpg)
+
 The Grant/Chofu heat pump supports thermistors in both the hot water
 cylinder and in the buffer tank.  According to the [service
 manual](https://github.com/aerona-chofu-ashp/docs/blob/main/Chofu/R32/SERVICE%20MANUAL_AEYC-xx42%2C-xx43XU-GR%20(RA-98(5)).pdf)
