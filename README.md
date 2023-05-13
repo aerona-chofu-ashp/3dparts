@@ -1,4 +1,4 @@
-# 3D Printable parts for Grant air source heat pump installation
+# 3D printable parts for Grant air source heat pump installation
 
 This repository contains 3D printer files for components suitable for
 central heating using a Grant Aerona3 air source heat pump.
