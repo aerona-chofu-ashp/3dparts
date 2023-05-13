@@ -21,8 +21,8 @@ Aliexpress 'Funny Bunny's Instruments Store':
 
 It mounts the probe in a 20mm thermostat pocket in the cylinder, and
 attaches an RJ11 socket to the end, so that standard twisted pair telephone
-wiring can be used to wire it back to the ASHP.  The socket is a generic
-Chinese:
+or ethernet wiring can be used to wire it back to the ASHP.  The socket is a
+generic Chinese:
 
 [JIUYUANCHUNJJ 15 Pcs RJ11 PCB Jacks Universal RJ11 Socket Female Jacks 6P4PCB RJ11 Telephone Female Connectors for Landline Phones Home Appliances Digital Products](https://www.amazon.co.uk/JIUYUANCHUNJJ-Universal-Telephone-Connectors-Appliances/dp/B0BFXHWNCM/)
 
@@ -32,17 +32,34 @@ with the following pin spacing:
 
 but other parts can be used if the footprint is adjusted.
 
+### Components
+
+The 3D printed design comprises three pieces:
+
+1.  a boss which inserts into a 20mm thermostat pocket on the cylinder, into which
+1b. an M5 stainless steel screw holds the probe in place
+2.  a base piece which presses into the boss, on which
+2b. an RJ11 connector is mounted, and the probe soldered to the middle
+    pins of the RJ11 (so that a standard twisted pair telephone cable can be used)
+3. a cover to slide over piece (2) to protect the wiring
+
+The design was printed in white PLA with a 0.6mm nozzle - ABS might have
+been better for its higher temperature properties, but PLA worked
+acceptably.  It may be necessary to adjust tolerance values for different
+filaments or 3D printers.
+
 ### Enabling
 
 The Aerona3 ASHP accepts the hot water thermistor on terminals 7 and 8, and
 the buffer tank thermistor on terminals 11 and 12.
 
-The hot water thermistor is enabled by setting 51-07 to 1.  This enables the
-thermistor to be read via Modbus or on the room controller via setting
-01-31.  If the room controller is driving hot water programs, rather than
-the external Grant relay box, then this thermistor is used for deciding
-whether the hot water has reached 'eco', 'comfort' or 'boost' temperatures,
-and for running the weekly legionella cycle.
+The hot water thermistor is enabled on the ASHP room controller by changing
+setting 51-07 to 1.  This enables the thermistor to be read via Modbus or on
+the room controller via setting 01-31.  If the room controller is driving
+hot water programs, rather than the external Grant relay box, then this
+thermistor is used for deciding whether the hot water has reached 'eco',
+'comfort' or 'boost' temperatures, and for running the weekly legionella
+cycle.
 
 The buffer tank thermistor is enabled by setting 51-11 to 1.  However care
 is required, because enabling it can affect heating profile of
